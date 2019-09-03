@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+	background-color: #b7b7b7;
+}
+
+h1 {
+	text-align: center;
+	padding: 40px;
+	font-family: "Montserrat+Alternates", Arial, sans-serif;
+	color: #fff;
+	background-color: #b7b7b7;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	margin: 50px 0;
+}
+
+.wraper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	padding: 0 40px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.list-hiden {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*стили шапки*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-family: "Montserrat+Alternates", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	padding: 15px 0;
+	color: #ffffff;
+	background-color: #b7b7b7;
+
+}
+
+.logo {
+	font-size: 24px;
+	line-height: 24px;
+	cursor: pointer;
+	text-transform: uppercase;
+	padding: 5px 15px;
+}
+
+.user-navigation {
+	display: flex;
+	align-items: center;
+	align-content: space-between;
+}
+
+.user-navigation a {
+	font-size: 18px;
+	line-height: 24px;
+	color: inherit;
+	padding: 20px;
+}
+
+.user-navigation a:hover {
+	color: #ebffee;
+	text-decoration: none;
+}
+
+.logout a {
+	display: block;
+	padding: 0 10px 10px 10px;
+}
+
+/*Содержимое страницы*/
+.main {
+	min-height: 200px;
+	background: url(../img/Background.jpg) repeat #b7b7b7 center center;
+	background-size: 100%;
+	opacity: 0.5;
+	position: relative;
+	background-attachment: fixed;
+	flex: 1 0 auto;
+	box-shadow: inset 0 5px 0 0 #ebffee;
+	z-index: 1;
+}
+
+/*Подвал сайта*/
+.footer {
+	display: flex;
+	align-items: center;
+	min-height: 100px;
+	background-color: rgba(57, 62, 82, 0.82);
+	justify-content: space-between;
+	padding: 20px 40px;
+	color: #fff;
+	box-shadow: inset 0 5px 0 0 #ebffee;
+	font-family: "Montserrat+Alternates", Arial, sans-serif;
+	font-size: 12px;
+	line-height: 10px;
+	font-weight: 300;
+	flex: 0 0 auto;
+}
+
+.social-button {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	background-color: inherit;
+	border-radius: 50%;
+}
+
+.social-button:hover {
+	background-color: #676565;
+}
+
+.social-list {
+	padding: 0px;
+	display: flex;
+	width: 130px;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.form-group {
+	display: flex;
+}
+
+.form-auth {
+	color: #fff;
+	width: auto;
+	background-color: rgba(123, 123, 123, 0.8);
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	border: solid 2px #676565;
+}
+
+.form {
+	position: fixed;
+	color: #000000;
+	background-color: #ffffff;
+	border-top: 8px #ebffee solid;
+	box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.8);
+}
+
+.auth {
+	top: 120px;
+	left: 50%;
+	width: 600px;
+	z-index: 1000;
+	margin-left: -310px;
+}
+
+.btn-secondary:hover {
+	background-color: #ebffee;
+	color: #000000;
+}
+
+.form-close {
+	width: 25px;
+	height: 25px;
+	font-size: 0;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	top: -10px;
+	right: -30px;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.form-close::before,
+.form-close::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 4px;
+	background-color: #ebffee;
+	top: 10px;
+	left: 2px;
+	border-radius: 2px;
+}
+
+.form-close::before {
+	transform: rotate(45deg);
+}
+
+.form-close::after {
+	transform: rotate(-45deg);
+}
+
+/*стили для личного кабинета*/
+
+.card {
+	margin: 0;
+	font-family: "Montserrat+Alternates", Arial, sans-serif;
+	color: #fff;
+	font-size: 21px;
+	line-height: 24px;
+}
+
+.card-header {
+	background-color: #b7b7b7;
+	box-shadow: inset 0 5px 0 0 #ebffee;
+}
+
+.card-body {
+	color: #000000;
+	padding: 20px;
+}
+
+.card-body img {
+	border-radius: 50%;
+}
+
+.card-body-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 0 0 30px 0;
+}
+
+.search {
+	margin: 20px 20px;
+	position: relative;
+	opacity: 0.8;
+}
+
+.search input[type="search"]::-webkit-input-placeholder {
+	color: #000;
+	font-size: 18px;
+	line-height: 24px;
+	opacity: 0.7;
+}
+
+.info-list {
+	list-style: none;
+	text-align: left;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.grid li {
+	background: #b7b7b7;
+}
+
+.actions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 60px 0;
+	width: 100%;
+}
+
+.actions a {
+	margin: 10px;
+}
+
+.card-item .actions {
+	display: none;
+	background-color: rgba(235, 255, 238, 0.50);
+	z-index: 10;
+}
+
+.card-item:hover .actions {
+	display: block;
+}
+
+.card-item:hover {
+	box-shadow: 0px 0px 10px -2px rgba(7, 7, 7, 0.3);
+}
+
+.card-title {
+	margin: 10px;
+}
