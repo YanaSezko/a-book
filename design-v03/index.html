@@ -17,16 +17,10 @@
 	<div class="wraper">
 		<header class="header container">
 			<p class="logo" tabindex="0">A-Book</p>
-			<div class="user-navigation">
-				<ul class="list-hiden user-navigation">
-					<li><a class="login" href="#">Войти</a></li>
-					<li><a class="check-in" href="#">Регистрация</a></li>
-				</ul>
-			</div>
 		</header>
 		<!--Содержимое главной страницы-->
 		<main class="main">
-			<h1>Добро пожаловать в менеджер контактов!<br>Нажмите "Войти" для авторизации</h1>
+			<h1 class="visually-hidden">Менеджер контактов</h1>
 			<!--Форма авторизации (Pop-up блок окрывается при нажатии кнопки "Войти")-->
 			<section class="form auth">
 				<h2 class="visually-hidden">Авторизация</h2>
@@ -39,14 +33,25 @@
 						<label class="visually-hidden" for="exampleInputPassword1">Password</label>
 						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
 					</div>
+					<!--при нажатии кнопки 'регистрация' добавляется это поле и кнопка "сохранить",кнопки "войти" и "регистрация" скрываются-->
+					<div class="form-group visually-hidden">
+						<label class="visually-hidden" for="exampleInputPassword2">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Enter the password again">
+					</div>
 					<div class="form-group form-check">
 						<input type="checkbox" class="form-check-input" id="exampleCheck1">
 						<label class="form-check-label" for="exampleCheck1">Запомнить пароль</label>
 					</div>
-					<button type="submit" class="btn btn-secondary">Авторизация</button>
-					<button class="form-close" type="button">Закрыть</button>
-					<a href="private_office.html" style="font-size: 24px;"> Вход для разработки </a>
+					<div class="user-navigation">
+						<ul class="list-hiden user-navigation">
+							<li class=""><button type="submit" class="btn btn-secondary">Войти</button></li>
+							<li class=""><button type="submit" class="btn btn-secondary">Регистрация</button></li>
+
+							<li><button type="submit" class="btn btn-secondary visually-hidden">Сохранить</button></li>
+						</ul>
+					</div>
 				</form>
+				<a href="private_office.html" style="color: aliceblue;">временный вход</a>
 			</section>
 		</main>
 		<footer class="footer">
