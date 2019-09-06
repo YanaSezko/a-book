@@ -53,10 +53,10 @@ a {
 
 .logo a,
 .logo {
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 32px;
+	line-height: 34px;
 	cursor: pointer;
-	text-transform: uppercase;
+	
 	color: rgba(255, 255, 255, 0.5);
 	margin: 0;
 	padding: 20px;
@@ -121,7 +121,9 @@ a {
 	position: relative;
 	background-attachment: fixed;
 	flex: 1 0 auto;
-	box-shadow: inset 0 0.7em 0 0 rgba(183, 183, 183);
+	-webkit-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
 	border-radius: 10px;
 }
 
@@ -245,19 +247,12 @@ a {
 
 .card-header {
 	background-color: rgba(57, 62, 82, 0.82);
-	box-shadow: inset 0 0.7em 0 0 rgba(183, 183, 183);
+	
 }
 
 .card-body {
 	color: #000000;
 	padding: 20px;
-}
-
-.card-body img {
-	border-radius: 50%;
-	-webkit-box-shadow: 1px 2px 11px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 1px 2px 11px 0px rgba(0, 0, 0, 0.2);
-	box-shadow: 1px 2px 11px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card-body-top {
@@ -333,7 +328,6 @@ a {
 	top: 5px;
 }
 
-
 .card-body-top .sort::after {
 	content: "";
 	width: 24px;
@@ -345,6 +339,18 @@ a {
 	right: 8px;
 	top: 5px;
 }
+
+.card-body-top .sort:focus::after{
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-image: url("/img/sort-descend.ico");
+	background-color: inherit;
+	background-position: 0 0;
+	position: absolute;
+	right: 8px;
+	top: 5px;
+} 
 
 .office .form-control {
 	background-color: rgb(255, 255, 255);
