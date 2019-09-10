@@ -174,7 +174,8 @@ a {
 	display: flex;
 }
 
-.auth {
+.auth,
+.editing {
 	background: rgba(57, 62, 82, 0.56);
 	color: transparent;
 	padding: 20px;
@@ -340,7 +341,7 @@ a {
 	top: 5px;
 }
 
-.card-body-top .sort:focus::after {
+.card-body-top .sort:active::after {
 	content: "";
 	width: 24px;
 	height: 24px;
@@ -454,6 +455,76 @@ a {
 .card-title {
 	margin: 10px;
 }
+
 /*Стили для формы редактирования контакта*/
+.form-editing .grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 150px;
+	grid-row-gap: 20px;
+}
 
+.editing {
+	width: auto;
+	padding: 40px 40px;
+	position: absolute;
+	background-color: rgba(57, 62, 82, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
 
+.editing h2 {
+	font-family: "Montserrat+Alternates", Arial, sans-serif;
+	padding: 15px 0;
+	color: #ffffff;
+	margin: 0;
+	padding: 0 0 40px 0;
+}
+
+.editing .form-bottom {
+	text-align: center;
+	padding: 20px 0 0 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.editing .form-bottom .btn {
+	margin: 20px 0 0 20px;
+}
+
+.form-control-select {
+	padding: 0 10px;
+}
+
+.editing-inp .check-favorites {
+	margin: 4px 15px;
+}
+
+.groups-list .card-body a {
+	text-decoration: none;
+	display: block;
+}
+
+.groups-list .card-body a:hover {
+	color: #fff;
+}
+
+.card-body-top h4 {
+	color: #7e7e7e;
+}
+.wraper .form-control{
+	width: auto;
+}
+.editing-inp .form-control{
+	width: 100%;
+}
+.groups .grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}

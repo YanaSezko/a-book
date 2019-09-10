@@ -19,7 +19,7 @@
 			<p class="logo" tabindex="0"><a href="index.html">A-Book</a></p>
 		</header>
 		<main class="main">
-			<h2 class="visually-hidden">Личный кабинет</h2>
+			<h1 class="visually-hidden">Личный кабинет</h1>
 			<div class="card text-center">
 				<div class="card-header">
 					<ul class="nav nav-tabs card-header-tabs">
@@ -204,31 +204,59 @@
 					</ul>
 				</div>
 			</div>
-			
+
 			<!--Форма редактирования контакта -->
 			<section class="form editing visually-hidden">
-        <h3 class="visually-hidden">Редактирование контакта</h3>
-        <form action="#" method="post">
-            <div class="form-top">
-                <p class="editing-inp">
-                    <label for="name">Ваше имя:</label>
-                    <input class="users-name" type="text" name="users-name" id="name" placeholder="Имя контакта" required>
-                </p>
-                <p class="editing-inp">
-                    <label for="email">Ваш e-mail:</label>
-                    <input class="users-email" type="email" name="email" id="email" placeholder="Email контакта" required>
-                </p>
-              </div>
-            <div class="form-bottom">
-                <button class="btn-red btn-send" type="submit" id="send">Сохранить</button>
-            </div>
-            <button class="form-close" type="button">Закрыть</button>
-        </form>
-    </section>
+				<h2 class="">Введите данные контакта</h2>
+				<form action="#" method="post" class="form-editing" id="form-editing">
+					<div class="form-top grid">
+						<p class="editing-inp">
+							<label for="name">Имя контакта</label>
+							<input class="form-control users-name" type="text" name="users-name" id="name" placeholder="Имя" required>
+						</p>
+						<p class="editing-inp">
+							<label for="phon1">Тел(1)</label>
+							<input class="form-control users-phone" type="tel" name="phone" id="phon1" placeholder="Номер телефона" required>
+						</p>
+						<p class="editing-inp">
+							<label for="phon2">Тел(2)</label>
+							<input class="form-control users-phone" type="tel" name="phone" id="phon2" placeholder="Номер телефона" required>
+						</p>
+						<p class="editing-inp">
+							<label for="email">E-mail</label>
+							<input class="form-control users-email" type="email" name="email" id="email" placeholder="Email" required>
+						</p>
+						<p class="editing-inp">
+							<label for="address">Адрес</label>
+							<input class="form-control users-address" type="text" name="address" id="address" placeholder="Адрес" required>
+						</p>
+						<p class="editing-inp">
+							<label for="organization">Организация</label>
+							<input class="form-control users-organization" type="text" name="organization" id="organization" placeholder="Организация" required>
+						</p>
+						<p>
+							<select form="form-editing" class="form-control form-control-select" name="groups">
+								<option>Выберите группу</option>
+								<option value="Дом">Дом</option>
+								<option value="Работа">Работа</option>
+								<option value="Друзья">Друзья</option>
+							</select>
+						</p>
+						<p class="editing-inp">
+							<label class="form-check-favorites" for="exampleCheck2">Добавить в избранные</label>
+							<input type="checkbox" class="form-check-input check-favorites" id="exampleCheck2">
+						</p>
+					</div>
+					<div class="form-bottom">
+						<button class="btn btn-secondary btn-save" type="submit" id="send">Сохранить</button>
+						<button class="btn btn-secondary btn-close" type="button">Закрыть</button>
+					</div>
+				</form>
+			</section>
 			<!--/////////////////////////////-->
-			
-			
-			
+
+
+
 		</main>
 		<footer class="footer">
 			<div class="footer-copyright">
@@ -259,6 +287,9 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
