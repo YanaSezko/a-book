@@ -297,7 +297,7 @@ a {
 	height: calc(1em + .9rem + 0.5px);
 }
 
-.office .search .btn-secondary::after {
+.wraper .search .btn-secondary::after {
 	content: "";
 	width: 25px;
 	height: 25px;
@@ -352,12 +352,12 @@ a {
 	top: 5px;
 }
 
-.office .form-control {
+.wraper .form-control {
 	background-color: rgb(255, 255, 255);
 	width: 300px;
 }
 
-.office .search .btn-secondary {
+.wraper .search .btn-secondary {
 	position: relative;
 	padding: 0 20px;
 	background-color: rgb(255, 255, 255);
@@ -454,3 +454,6 @@ a {
 .card-title {
 	margin: 10px;
 }
+/*Стили для формы редактирования контакта*/
+
+
