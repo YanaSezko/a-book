@@ -529,3 +529,7 @@ a {
 .form-auth .form-control{
 	width: 100%;
 }
+.card-body .search .form-control{
+border-right: 1px solid #7e7e7e;
+	border-radius: 5px 0 0 5px;
+}
