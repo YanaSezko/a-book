@@ -516,9 +516,7 @@ a {
 .card-body-top h4 {
 	color: #7e7e7e;
 }
-.wraper .form-control{
-	width: auto;
-}
+
 .editing-inp .form-control{
 	width: 100%;
 }
@@ -527,4 +525,7 @@ a {
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
+}
+.form-auth .form-control{
+	width: 100%;
 }
