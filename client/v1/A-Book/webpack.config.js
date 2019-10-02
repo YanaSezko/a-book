@@ -17,16 +17,17 @@ module.exports = {
 			{
 				test: /\.css/,
 				use: ['style-loader', 'css-loader']
-	}
-	,
+	},
 			{
 				test: /\.jpg$/,
                 loader: "url-loader"
 },
+			
 			{
-				test: /\.png$/,
+				test: /\.png$|\.svg$|\.ico$/,
                 loader: "url-loader"
-			}
+			},
+			
     ]
 	},
 	devServer: {

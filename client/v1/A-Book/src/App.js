@@ -14,7 +14,7 @@ import './styles/styles.css'
 
 
 import Layout from './app/Layouts/Layout';
-import Main from './app/pages/Main';
+import Auth from './app/components/Auth';
 import Users from './app/pages/Users';
 import User from './app/pages/User';
 import UsersF from './app/pages/UsersF';
@@ -33,15 +33,12 @@ ReactDOM.render(
 
 	<Router history={browserHistory}>
 		<Route path="/" component={Layout}>
-			<IndexRoute component={Main}/>
-			<Route path="users" component={Users}>
-				<Route path=":userId" component={User} />
-			</Route >
-			<Route path="usersF" component={UsersF}>
-				<Route path=":userFId" component={UserF} />
-			</Route >
-			<Route path="*" component={PageNotFound}/>
-		</Route>
+			<IndexRoute component={Auth}/>
+	   	<Route path="users" component={Users}>
+			<Route path=":userId" component={User} /></Route >
+		<Route path="usersF" component={UsersF}>
+			<Route path=":userFId" component={UserF} /></Route >
+		<Route path="*" component={PageNotFound}/></Route>
 	</Router>
 	,
 	document.getElementById('root'));
